@@ -2,7 +2,7 @@
 layout: resume
 title: Resume
 comments: false
-modified: 2014-12-28
+modified: 2014-12-31
 ---
 Rémi Vichery
 =====================
@@ -105,7 +105,7 @@ Miscellaneous
  * **Spanish:** basic knowledge
 
 
-### Activites
+### Activities
  * **Sports:** Running, rugby and moutain biking
  * **Music:** Flute and guitar player
  * **IT:** Daily technological watch on network, virtualization, storage and development (twitter, blog, RSS feeds...), Wireshark contributor (Stateless Transport Tunneling protocol dissector)
