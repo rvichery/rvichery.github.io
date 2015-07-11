@@ -2,7 +2,7 @@
 layout: resume
 title: Resume
 comments: false
-modified: 2014-12-31
+modified: 2015-07-10
 ---
 Rémi Vichery
 =====================
@@ -10,13 +10,17 @@ Rémi Vichery
 Network & Virtualization Engineer
 ---------------------
 
-> **Address:** 237 Route de Saint Simon , 31100 Toulouse, France\\
+> **Address:** San Jose, California, USA\\
 > **Email:** remi.vichery@gmail.com
 
 
 Work experience
 =========
-2012-current
+2015-current
+:   #### Technical Marketing Engineer
+:   *Nuage Networks (Mountain View, California, USA)*
+
+2012-2015
 :   #### Network & Virtualization engineer
 :	*Orange on behalf of Ausy (Toulouse, France)*
 
@@ -76,7 +80,7 @@ Skills
 
 ### Network
  * LAN/WAN interconnections
- * SDN and NFV technologies
+ * SDN/NFV technologies
  * WAN technologies
  * Dynamic routing (RIP, OSPF and BGP)
  * Datacenter architecture
@@ -108,4 +112,4 @@ Miscellaneous
 ### Activities
  * **Sports:** Running, rugby and moutain biking
  * **Music:** Flute and guitar player
- * **IT:** Daily technological watch on network, virtualization, storage and development (twitter, blog, RSS feeds...), Wireshark contributor (Stateless Transport Tunneling protocol dissector)
+ * **IT:** Daily technological watch on network, virtualization, storage and development (twitter, blog, RSS feeds...), Wireshark contributor (Stateless Transport Tunneling protocol dissector, MPLSoUDP support)
