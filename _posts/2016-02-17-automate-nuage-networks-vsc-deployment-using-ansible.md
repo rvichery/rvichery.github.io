@@ -12,7 +12,7 @@ share: "Automate Nuage Networks VSC deployment using Ansible"
 ---
 Today, I have released an **Ansible** role to automate the deployment of **Nuage Networks Virtualized Services Controller** (VSC)
 on **KVM** hypervisors. The goal of this role is to install and configure one or several Nuage Networks VSCs in a few minutes.
-For those of you whom don't know what is a **Nuage Networks VSC**, here is a brief description.  
+For those of you who don't know what is a **Nuage Networks VSC**, here is a brief description.  
 The **Virtualized Services Controller** is a **SDN controller** developed by **Nuage Networks**, it functions as a network control plane for the Nuage Network Virtualized Services Platform (VSP). This component of the Nuage Networks VSP supports several mode of deployments: standalone or clustered (2 to N). It is recommended to use a clustered deployment for production environment. The VSC cluster rely on MP-BGP (Multi Protocol BGP) to exchange information and keep the cluster synchronized. More information about the Nuage Networks VSP is available on the [Nuage Networks Official Website](http://www.nuagenetworks.net/products/virtualized-services-platform/).
 
 Some of you may have already had the chance to play with VSC deployments on KVM, I am sure you remember that you had to do many steps to install and configure each controller (modify the VSC libvirt XML template, configure the VSC using the console, attach the VSC to the bridges, ...).  
