@@ -7,7 +7,7 @@ modified: 2015-07-10
 Rémi Vichery
 =====================
 
-Network & Virtualization Engineer
+Technical Marketing Engineer
 ---------------------
 
 > **Address:** San Jose, California, USA\\
@@ -93,9 +93,9 @@ Skills
  * Ability to develop scripts for network administration
 
 ### System
- * Advanced VMware knowledge
+ * Advanced VMware knowledges
  * Advanced Linux skills
- * Basic Mac OS X, Windows 2008 Server skills
+ * Basic Mac OS X and Windows 2008 Server skills
  * HP, DELL, IBM and Cisco servers
  * Storage arrays administration (NetApp, EMC)
 
