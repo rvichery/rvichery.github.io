@@ -11,10 +11,9 @@ comments:
 share: "Using Ceph RBD snapshots with OpenStack Liberty"
 ---
 
-I recently had an interesting issue with the OpenStack platform I manage for hosting different public services ([Nuage Networks eXperience](http://nuagex.io) is one of them) at Nuage Networks. Doing
-snapshots of large RBD disks (>100GB) was taking hours to complete.
+I recently had an interesting issue with the OpenStack platform I manage. This platform hosts several public services at Nuage Networks, [Nuage Networks eXperience](http://nuagex.io) is one of them. On NuageX, labs are deployed from OpenStack snapshots. But doing snapshots of large RBD disks (>100GB) was taking hours to complete.
 
-I have started to look into improving these snapshots and Sebastien's blog post ([OpenStack Nova snapshots on Ceph RBD](https://www.sebastien-han.fr/blog/2015/10/05/openstack-nova-snapshots-on-ceph-rbd/)) gaves THE solution.
+I have started to look into improving these snapshots and Sebastien's blog post ([OpenStack Nova snapshots on Ceph RBD](https://www.sebastien-han.fr/blog/2015/10/05/openstack-nova-snapshots-on-ceph-rbd/)) gave me THE solution.
 One problem, I am running OpenStack Liberty and this feature was officially merged on Mitaka.
 
 I have decided to port this feature on Liberty for all of you who are still running an old cluster. This patch is available as a Github Gist: [Nova Liberty Ceph RBD Snapshots patch](https://git.io/v98IY)). I have tested it during several days, you can use it, but it's at your own risk.
