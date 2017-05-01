@@ -19,6 +19,11 @@ One problem, I am running OpenStack Liberty and this feature was officially merg
 
 I have decided to port this feature on Liberty for all of you who are still running an old cluster. This patch is available as a Github Gist: [Nova Liberty Ceph RBD Snapshots patch](https://git.io/v98IY)). I have tested it during several days but use it at your own risks.
 
+Before applying the patch on your compute nodes, check that:
+  - show_image_direct_url=True in /etc/glance/glance-api.conf on your controller
+  - show_multiple_locations=True in /etc/glance/glance-api.conf on your controller
+  - ceph client on compute nodes must have write permission on glance-images pool. You can update the permissions with ```ceph auth caps client.compute mon 'allow r' osd 'allow class-read object_prefix rbd_children, allow rwx pool=volumes, allow rwx pool=vms, allow rwx pool=glance-images' ```
+
 To apply the patch locally on your nova compute nodes:
 ```bash
 curl -L https://git.io/v98IY -o '/tmp/nova-liberty-rbd-direct-snapshot.patch'
