@@ -11,12 +11,12 @@ comments:
 share: "Using Ceph RBD snapshots with OpenStack Liberty"
 ---
 
-I recently had an interesting issue with the OpenStack platform I manage. This platform hosts several public services at Nuage Networks, [Nuage Networks eXperience](http://nuagex.io) is one of them. On NuageX, labs are deployed from OpenStack snapshots. But doing snapshots of large RBD disks (>100GB) was taking hours to complete.
+I recently had an interesting issue with the OpenStack platform I manage. This platform hosts several public services at Nuage Networks, [Nuage Networks eXperience](http://nuagex.io) is one of them. NuageX end users environments are basically deployed from OpenStack snapshots, but taking these snapshots, especially snapshots of large RBD disks (>200GB) were taking hours to complete.
 
 I have started to look into improving these snapshots and Sebastien's blog post ([OpenStack Nova snapshots on Ceph RBD](https://www.sebastien-han.fr/blog/2015/10/05/openstack-nova-snapshots-on-ceph-rbd/)) gave me THE solution.
 One problem, I am running OpenStack Liberty and this feature was officially merged on Mitaka.
 
-I have decided to port this feature on Liberty for all of you who are still running an old cluster. This patch is available as a Github Gist: [Nova Liberty Ceph RBD Snapshots patch](https://git.io/v98IY)). I have tested it during several days, you can use it, but it's at your own risk.
+Upgrading to Mitaka was not an option so I have decided to back port this feature on Liberty, I hope it will help some of you who are still running an old OpenStack version. This patch is available as a Github Gist: [Nova Liberty Ceph RBD Snapshots patch](https://git.io/v98IY)). I have tested it, you can use it, but it's at your own risk.
 
 Before applying the patch on your compute nodes, check that:
   - show_image_direct_url=True in /etc/glance/glance-api.conf on your controller
