@@ -5,7 +5,7 @@ reading_time:     true
 words_per_minute: 200
 
 # When testing locally leave blank or use http://localhost:4000
-# url: http://rvichery.com
+url: http://rvichery.com
 
 # Owner/author information
 owner:
@@ -44,14 +44,14 @@ kramdown:
   entity_output: as_char
   toc_levels: 1..6
   syntax_highlighter: rouge
-  # enable_coderay: true
-  #
-  # coderay:
-  #   line_numbers: nil
-  #   line_numbers_start: 1
-  #   tab_width: 4
-  #   bold_every: 10
-  #   css: class
+  enable_coderay: true
+
+  coderay:
+    line_numbers: nil
+    line_numbers_start: 1
+    tab_width: 4
+    bold_every: 10
+    css: class
 
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Capfile", "config", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
